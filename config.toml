@@ -1,0 +1,70 @@
+baseURL = "http://bs1phc.github.io"
+title = "chp1sb"
+defaultContentLanguage = "en"
+languageCode = "en"
+
+
+
+theme = "gokarna"
+
+# Automatically generate robots.txt
+enableRobotsTXT = true
+
+pygmentsStyle = "monokai"
+
+[params]
+  footer = "Another Hacker in the wild"
+  description = "Espionage, APTs and Red Team"
+  avatarURL = "/images/ava.jpeg"
+  avatarSize = "size-m"
+  socialIcons = [
+    {name = "twitter", url = "https://twitter.com/chp1sb"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/pascoalcybersecurity/"},
+    {name = "twitch", url = "https://twitch.com/bs1phc"},
+  ]
+
+
+[menu]
+  [[menu.main]]
+    # Unique identifer for a menu item
+    identifier = "posts"
+
+    url = "/posts/"
+    
+    # You can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+
+    # You can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+
+    # Display name
+    name = "Posts"
+
+    # Weights are used to determine the ordering
+    weight = 1
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "notes"
+    name = "Notes"
+    url = "/notes/"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "github"
+    url = "https://github.com/bs1phc"
+    weight = 5
+    
+    # We use feather-icons: https://feathericons.com/
+    pre = "<span data-feather='github'></span>"
